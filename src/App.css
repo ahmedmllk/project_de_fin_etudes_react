@@ -1,0 +1,329 @@
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+.black{
+    color: #000000;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+}
+/*start navbar*/
+nav img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(53deg) brightness(102%) contrast(103%);
+}
+nav li{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.Navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+}
+nav{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5vh ;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 5vh;
+}
+.icons{
+    display: flex;
+    gap: 3vh;
+}
+/*end navbar*/
+/*start front*/
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vh;
+    position: relative;
+}
+.starter h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 120px;
+}
+.starter p{
+    color:white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 20px;
+}
+.starter button{
+    width: 30%;
+    height: 10%;
+    margin-top: 4vh;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.home>img{
+    height: 100vh;
+}
+.pic{
+    filter: invert(87%) sepia(2%) saturate(10%) hue-rotate(349deg) brightness(82%) contrast(88%);  
+    width: 16%;
+    height: 70%;
+    padding: 0;
+    margin: 0;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom:5vh ;
+    width: 135vh;
+    height: 16%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*end front*/
+/*start Home*/
+.homeContainer{
+    width: 100%;
+    height: 80vh;
+    padding: 10vh 0;
+    padding-right: 2vh;
+    display: flex;
+    gap: 10%;
+    background-color: #001526;
+    align-items: center;
+    
+}
+.homeContainer img{
+    width: 50%;
+}
+.homee{
+    width: 30%;
+}
+.homee p{
+    font-size: 30px;
+    font-weight:bolder;
+    color: white;
+}
+.buttonhome{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+.buttonhome h1{
+    font-size: 20px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.buttonhome button{
+    border: none;
+    background-color:rgba(5, 172, 172, 0.363) ;
+    border-radius: 2000px;
+    height: 40px;
+    width: 40px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonhome span{
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+/*end Home*/
+/*start new arrival*/
+.newarrival{
+    height: 120vh;
+    background-color: #F7F7F7;
+}
+.newarrival h1{
+    margin-top: 0;
+    text-align: center;
+    padding-top: 7vh;
+    font-size: 50px;
+    color: #001526;
+}
+.buttonhome2{
+    display: flex;
+    width: 22.45%;
+    align-items: center;
+    margin:15vh 82vh;
+    margin-bottom: 0;
+    gap: 1vh;
+}
+h6{
+    font-size: 20px;
+    font-weight: 300;
+    color: #001526;
+    margin: 0;
+}
+.buttonhome2 button{
+    border: none;
+    background-color:rgba(5, 172, 172, 0.363) ;
+    border-radius: 2000px;
+    height: 40px;
+    width: 40px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonhome2 span{
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+/*end new collection*/
+/*start coollection*/
+.back{
+    width: 100%;
+}
+/*end collection*/
+/*start lookbook*/
+.look{
+    width: 200vh;
+    height: 80vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#CED2D1;
+}
+.look img {
+    height: 100%;
+}
+.par{
+    width: 40%;
+    padding: 10vh;
+}
+.par>h1{
+    letter-spacing: 7px;
+    font-size: 50px;
+}
+/*end lookbook*/
+/*start footer*/
+.footer{
+    width: 100%;
+}
+.sth{
+    width: 100%;
+    background-color: #F7F7F7;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pic_container{
+    display: flex;
+    width: 75%;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/*start footer */
+.actfooter img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(53deg) brightness(102%) contrast(103%);
+}
+.actfooter{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #001526;
+    padding: 10vh;
+}
+.actfooter p{
+    color: white;
+    font-size: 20px;
+}
+.actfooter ul{
+    padding: 0;
+}
+.actfooter li{
+    color: white;
+    list-style: none;
+}
+.actfooter h1{
+    color: white;
+}
+.border{
+    width: 30px;
+    height: 30px;
+    background-color:#02223c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.search input{
+    height: 30px;
+}
+.arrow{
+    color:white;
+}
+.search{
+    display: flex;
+    margin: 0 auto;
+}
+/*start buyer*/
+.Buyer{
+    padding-top:20vh;
+    background-color: white;
+    display:flex;
+    gap: 5%;
+    height: 300vh;
+}
+.title h1{
+    margin-top:0 ;
+    color: #000f1b;
+}
+.Filter{
+    width:25%;
+    height: 65vh;
+    background-color:#F7F7F7;
+    border: 1px solid #02223c;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left:5vh ;
+}
+.Filter h2{
+    font-size: 20px;
+    color: black;
+}
+.Filter select{
+    width:100%;
+    height: 50px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+.scale{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.scale h1{
+    font-size: 20px;
+}
+.triiie{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cardt{
+    width: 75%;
+}

@@ -1,0 +1,43 @@
+.actfooter img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(53deg) brightness(102%) contrast(103%);
+}
+.actfooter{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #001526;
+    padding: 10vh;
+}
+.actfooter p{
+    color: white;
+    font-size: 20px;
+}
+.actfooter ul{
+    padding: 0;
+}
+.actfooter li{
+    color: white;
+    list-style: none;
+}
+.actfooter h1{
+    color: white;
+}
+.border{
+    width: 30px;
+    height: 30px;
+    background-color:#02223c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.search input{
+    height: 30px;
+}
+.arrow{
+    color:white;
+}
+.search{
+    display: flex;
+    margin: 0 auto;
+}
