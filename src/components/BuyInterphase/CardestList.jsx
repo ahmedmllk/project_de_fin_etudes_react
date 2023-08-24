@@ -17,7 +17,7 @@ import aLange from '../images/logos/a.lange.png'
 import Omega from '../images/logos/omegaLogo.png'
 import tissot from '../images/logos/tissotLogo.png'
 import Rolex from '../images/logos/Rolex.png'
-const CardList = () => {
+const CardList = ({sexe,brand,valeur}) => {
     const watchesList=[
       {
         name:'PRX 40 205',
@@ -89,15 +89,15 @@ const CardList = () => {
         image:blackhood,
         logo:Rolex,
         price:815,
-        sexe:'Men',
+        sexe:'Male',
       },
       {
         name:'Lange 1',
-        brand:'A.Lange & sohne',
+        brand:'A.Lange & Sohne',
         image:lange1,
         logo:aLange,
         price:900,
-        sexe:'Men',
+        sexe:'Male',
       },
       {
         name:'Zeitwerk',
@@ -109,16 +109,19 @@ const CardList = () => {
       },
       {
         name:'Pisa',
-        brand:'A.Lange & sohne',
+        brand:'A.Lange & Sohne',
         image:pisa,
         logo:aLange,
         price:300,
         sexe:'Female',
       },
       ]
+    const first=watchesList.filter(e=>sexe==='Mixed'?e:e.sexe===sexe)
+    const second=first.filter(e=>brand==='All'?e:e.brand.toUpperCase()===brand.toUpperCase())
+    const third=second.filter(e=>e.price<=valeur) 
   return (
-    <div className='cardestlist'>
-      {watchesList.map(el=><Cardest el={el}/>)}
+    <div className='cardestlist '>
+      {third.map(el=><Cardest el={el}/>)}
     </div>
   )
 }

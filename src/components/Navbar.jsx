@@ -8,18 +8,17 @@ const Navbar = ({setnavigation,navigation}) => {
   return (
     <div className='Navbar'>
       <nav>
-        <img src={logo} alt="" className={navigation===1?'black':''}/>
+        <img src={logo} alt="" className={navigation===1||navigation===2||navigation===3?'black':''}/>
         <ul>
-          <li onClick={()=>setnavigation(0)}  className={navigation===1?'black':''}>Home</li>
-          <li onClick={()=>setnavigation(1)} className={navigation===1?'black':''}>Buy</li>
-          <li  onClick={()=>setnavigation(2)} className={navigation===1?'black':''}>Sell</li>
-          <li  className={navigation===1?'black':''}>Custom</li>
+          <li onClick={()=>setnavigation(0)}  className={navigation===1||navigation===2||navigation===3?'black':''}>Home</li>
+          <li onClick={()=>setnavigation(1)} className={navigation===1||navigation===2||navigation===3?'black':''}>Buy</li>
+          <li  onClick={()=>setnavigation(2)} className={navigation===1||navigation===2||navigation===3?'black':''}>Sell</li>
         </ul>
         <div className='icons'>
-          <IconContext.Provider value={navigation===1?{size:'2rem',color:'black'}:{size:'2rem',color:'white'}}>
+          <IconContext.Provider value={navigation===1||navigation===2||navigation===3?{size:'2rem',color:'black'}:{size:'2rem',color:'white'}}>
             <BsFillChatSquareTextFill className='icon'/>
             <BsFillPersonFill className='icon'/>
-            <BsHandbag className='icon'/>
+            <BsHandbag className='icon' onClick={()=>setnavigation(3)}/>
           </IconContext.Provider>
         </div>
         

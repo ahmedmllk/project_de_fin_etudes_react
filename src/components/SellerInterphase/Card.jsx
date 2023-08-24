@@ -1,16 +1,11 @@
 import { React, useState } from 'react'
-import './Cardt.css'
 import {TbShoppingBag} from 'react-icons/tb'
 import {AiFillHeart} from 'react-icons/ai'
 import { IconContext } from 'react-icons'
-import { useDispatch } from 'react-redux'
-import { addtionproduct } from '../../store/slices/shoppingSlice'
 const Cardest = ({el}) => {
   const [colorr, setcolorr] = useState('')
-  const dispatch=useDispatch()
-
   return (
-    <div className='card'>
+    <div className='card cards'>
       <div className='card_top'>
         <div className='iconr'  onClick={()=>colorr===''?setcolorr('red'):setcolorr('')}>
         <IconContext.Provider value={{size:'2rem',color:colorr}}>
@@ -26,7 +21,7 @@ const Cardest = ({el}) => {
       <div className='fin'>
         <h2>{el.price}$</h2>
        <IconContext.Provider value={{size:'2rem',color:'gray'}}>
-        <TbShoppingBag className='iconito' onClick={()=>console.log(dispatch(addtionproduct(el)))}/>
+        <TbShoppingBag className='iconito'/>
        </IconContext.Provider>
       </div>
       

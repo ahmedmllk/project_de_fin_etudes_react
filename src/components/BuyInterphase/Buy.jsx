@@ -1,22 +1,24 @@
 import React, { useState } from 'react'
 import CardList from './CardestList'
 const Shop = () => {
-  const [price, setprice] = useState(50)
   const [valeur, setvaleur] = useState(1500)
+  const [brand, setbrand] = useState('All')
+  const [sexe, setsexe] = useState('Mixed')
   return (
     <div className='Buyer'>
-      <div className='Filter'>
+      <div className='mou5ad3'>
+      <div className='Filter fixed'>
         <h1>Filter</h1>
         <h2>Brand:</h2>
-          <select name="" id="">
+          <select name="" id="" onChange={(e)=>setbrand(e.target.value)}>
             <option>All</option>
             <option>Tissot</option>
             <option>Omega</option>
             <option>Rolex</option>
             <option>A.Lange & Sohne</option>
           </select>
-        <h2>Sexe</h2>
-          <select name="" id="">
+        <h2>Sexe:</h2>
+          <select name="" id="" onChange={(e)=>setsexe(e.target.value)}>
             <option>Mixed</option>
             <option>Male</option>
             <option>Female</option>
@@ -32,13 +34,10 @@ const Shop = () => {
           <div><input type="radio" name="a" id="" /><label htmlFor="">increasing</label></div>
           <div><input type="radio" name="a" id="" /><label htmlFor="">decreasing</label></div>
         </div>
-        <div className='9ar6a'>
-          
-        </div>
-      
+      </div>
       </div>
       <div className='cardt'>
-        <CardList/>
+        <CardList sexe={sexe} valeur={valeur} brand={brand}/>
       </div>
       
     </div>

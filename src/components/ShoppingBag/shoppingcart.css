@@ -1,0 +1,115 @@
+.shopping{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding-top:30vh ;
+    
+}
+.shopping h1{
+    margin-top: 0 ;
+    padding:0 10vh;
+    text-align: center;
+}
+.busculator{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh;
+}
+.ColumnContainer{
+    width: 55%;
+    height: 100%;
+}
+.column {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4vh;
+}
+.column img{
+    height: 100%;
+
+}
+.confirmation{
+    width: 40%;
+    border: 1px solid #02223c;
+    border-radius: 10px;
+    padding: 5vh;
+}
+.quantity button{
+    border: none;
+    background-color: transparent;
+    color: #02223c;
+    font-size: 20px;
+}
+.quantity input{
+    border: none;
+    background-color: #02223c;
+    text-align: center;
+    color: white;
+    width:5vh;
+    height: 5vh;
+    border-radius: 20000px;
+}
+.confirmation h3{
+    font-size: 30px;
+}
+.discount {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.discount input{
+    border: 3px solid #bbbbbbc7;
+    background-color: transparent;
+    padding: 10px 5px;
+    font-weight: 600;
+    border-radius: 200px;
+    text-align: center;
+}
+.discount button{
+    border: none;
+    padding: 10px 5px;
+    font-size: 15px;
+    width: 10vh;
+    border-radius: 200px;
+    text-align: center;
+    background-color: #ff9447;
+    color: white;
+    font-weight: 500;
+}
+.none{
+    display: none;
+}
+.tra{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.tra h4{
+    color: #908f8f;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 10vh;
+}
+.tra h5{
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 10vh ;
+}
+.tra h6{
+    font-size: 25px;
+    font-weight: 500;
+}
+.checkout{
+    margin:2vh 20vh;
+    width: 50%;
+    padding: 15px;
+    background-color: #02223c;
+    border: none;
+    border-radius: 200px;
+    color: white;
+}

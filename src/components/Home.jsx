@@ -39,7 +39,7 @@ const Home = ({setnavigation}) => {
                 </div>
             </div>
         </div>
-        <Footer/>
+       
     </div>
   )
 }

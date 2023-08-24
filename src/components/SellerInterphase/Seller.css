@@ -1,0 +1,110 @@
+.Seller{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    padding-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nth{
+    border: 5px rgba(128, 128, 128, 0.634) dashed;
+    border-radius: 20px;
+    width: 65%;
+    height: 65%;
+    text-align: center;
+    margin: 0 auto;
+}
+.add{
+    margin: 10vh auto;
+    padding: 10px;
+    width: 50vh;
+    height: 7vh;
+    border:none;
+    border-radius: 10px;
+    background-color: tan;
+}
+.modal{
+    background-color: rgba(37, 36, 36, 0.288);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.smallmodal{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.addPhoto{
+    border: 5px rgba(128, 128, 128, 0.634) dashed;
+    border-radius: 20px;
+    width: 65%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.addPhoto h1{
+    font-size: 40px;
+    font-family:serif;
+    color:rgb(177, 177, 177);
+}
+.addPhoto h2{
+    font-size: 50px;
+    font-family: serif;
+    color:rgb(177, 177, 177);
+}
+.hoo{
+    height: 95%;
+}
+.input{
+    width: 100%;
+    height: 3vh;
+}
+.addPhoto input{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;
+cursor: pointer;
+}
+.addPhoto img{
+    height: 100%;
+}
+.Buttons{
+    width: 100%;
+    margin: 7vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+.Buttons button{
+    height: 5vh;
+    width: 45%;
+    border-radius: 10px;
+}
+.confirm{
+    background-color: yellow;
+}
+.cancel{
+    background-color: rgba(163, 163, 163, 0.862);
+}
+.counter{
+    display: flex;
+}
