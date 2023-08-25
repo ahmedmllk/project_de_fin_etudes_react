@@ -71,6 +71,11 @@ nav ul{
     font-size: 25px;
     font-weight: 300;
 }
+.starter button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-out;
+}
 .home>img{
     height: 100vh;
 }
@@ -335,3 +340,13 @@ h6{
 .fixed{
     position:fixed;
 }
+.icono :hover{
+    color:red;
+}
+.orange :hover{
+    color: orange;
+}
+.look{
+    width: 100%;
+}
+

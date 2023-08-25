@@ -8,7 +8,7 @@ import { addtionproduct } from '../../store/slices/shoppingSlice'
 const Cardest = ({el}) => {
   const [colorr, setcolorr] = useState('')
   const dispatch=useDispatch()
-
+  
   return (
     <div className='card'>
       <div className='card_top'>
